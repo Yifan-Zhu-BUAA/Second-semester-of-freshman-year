@@ -10,12 +10,12 @@ int main()
     int num[81];
     int i,j,k,temn;
     gets(str1);
-    for (i=0,j=0;str1[i]!='\0';i++)
+    for (i=0,j=0;str1[i]!='\0';i++)//去除空格
     {
         if(str1[i]!=' ') str2[j++]=str1[i];
     }
     str2[j]='\0';
-    for (i=0,j=0,k=0,temn=0;(c=str2[k])!='\0';k++)
+    for (i=0,j=0,k=0,temn=0;(c=str2[k])!='\0';k++)//分成数字和符号的组
     {
         if (isdigit(c))
         {
@@ -43,7 +43,7 @@ int main()
 
 int cal(int num[81],char str1[81])
 {
-    int i,j,temn,k;
+    int i,j,temn,k;//i是num的下标，j是str1的下标，k是新的字符串组的下标
     char tem2[81],c;
     for (i=j=k=temn=0;(c=str1[j])!='\0';j++)
     {
