@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "ctype.h": "c",
+        "type_traits": "c"
+    },
+    "vim.useCtrlKeys": false,
+    "C_Cpp.errorSquiggles": "disabled"
+}

@@ -7,8 +7,8 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                //"${file}",//这个是指生成当前文件，多文件编译时候搞不了
-                "*.c",//当前文件夹所有文件都编译
+                "${file}",//这个是指生成当前文件，多文件编译时候搞不了
+                //"*.c",//当前文件夹所有文件都编译
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
