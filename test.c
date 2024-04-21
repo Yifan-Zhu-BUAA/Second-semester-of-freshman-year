@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
+#include <stdlib.h>
 //运算符判断，如果符号优先级低于当前运算符则依次出栈，然后
 //将当前的入栈,如果栈顶高于等于当前则入栈
 char stack_c[100];
@@ -85,6 +87,19 @@ void creat_cus(Cus *total[],int n)
         }
     }
 }
+
+
+struct node
+{
+    struct data
+    {
+        int a;
+        int b;
+    } data;
+    struct node* next;
+};
+
+
 int main(void)
 {
     // Cus *total[2];
@@ -102,10 +117,8 @@ int main(void)
     //     printf("%d\n",win); 
     // }
     // printf("%d",21/3);
-    int n=0;
-    char str[11];
-    if (! n) printf("1");
-    scanf("%d",&n);
-    scanf("%s",str);
-    printf("%d %s\n",n,str);
+    struct node temp;
+    temp.data.a=1;
+    temp.next=NULL;
+    printf("%d",temp.data.a);
 }
